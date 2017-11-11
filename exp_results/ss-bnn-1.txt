@@ -1,0 +1,564 @@
+/Users/vmullachery/anaconda/envs/dl2.7/bin/python "/Applications/PyCharm CE.app/Contents/helpers/pydev/pydevd.py" --multiproc --qt-support --client 127.0.0.1 --port 52635 --file /Users/vmullachery/mine/Udacity/LinearAlgebra/WCB/ML_models_priors_and_rejection/vm_main_bnn.py
+warning: Debugger speedups using cython not found. Run '"/Users/vmullachery/anaconda/envs/dl2.7/bin/python" "/Applications/PyCharm CE.app/Contents/helpers/pydev/setup_cython.py" build_ext --inplace' to build.
+pydev debugger: process 9756 is connecting
+
+Connected to pydev debugger (build 162.1967.10)
+RF max_feat sqrt ntrees 1 1 dream4 0.15 no no SS yes 0
+loading Dataset  dream4
+Constructor Dataset
+Original dimensions...
+Expression dim:  (100, 421)
+Goldstandard dim:  (100, 100)
+Num of genes are:  100
+Num of tfs:  100
+
+
+Filter for coefficient of variation
+num of total genes after filtering:  100
+num of total genes removed:  0
+num of tfs removed in removed genes:  0
+num of total tfs after filtering:  100
+New dimensions after coeff of var filter...
+Expression dim:  (100, 421)
+Goldstandard dim:  (100, 100)
+Num of tfs:  100
+
+
+Filters the 0 rows and 0 columns of the gold standard
+dimension of gold standard filtered (removing 0s rows and 0s cols) is:  (86, 41)
+number of genes in the rows and in the universe are:  86
+number of genes in the cols and in the universe are:  41
+100
+100
+dimension of expression matrix is:  (100, 421)
+number of genes in the rows are:  100
+number of tfs in the cols are:  100
+New dimensions after 2nd filter...
+Expression dim:  (100, 421)
+Goldstandard dim:  (86, 41)
+Num of genes are:  100
+Num of tfs:  100
+The number of genes is:  100
+The number of TFs is:  100
+The total Number of data points in the dataset is:  421
+The number of time series is:  20
+The number of total time points is:  220
+The number of steady state points is:  201
+Leave-out points for timeseries:  OrderedDict([('TS_4delt_950', 450.0), ('TS_7delt_450', 450.0), ('TS_8delt_950', 450.0)]) OrderedDict([('TS_4delt_1000', 500.0), ('TS_7delt_500', 500.0), ('TS_8delt_1000', 500.0)]) [3 6 7]
+Leave-out points for steady state:  ['G84(-/-)' 'G60(-/-)' 'G54(-/-)' 'G9(+/-)' 'G56(+/-)' 'G40(+/-)'
+ 'G39(-/-)' 'G16(+/-)' 'G23(+/-)' 'G53(-/-)' 'G3(+/-)' 'G1(+/-)' 'G58(+/-)'
+ 'G3(-/-)' 'G100(-/-)' 'G27(-/-)' 'G63(+/-)' 'G74(+/-)' 'G37(-/-)'
+ 'G69(-/-)' 'G31(+/-)' 'G97(+/-)' 'G91(+/-)' 'G23(-/-)' 'G99(+/-)'
+ 'G17(-/-)' 'G32(-/-)' 'G31(-/-)' 'G77(-/-)' 'G20(-/-)'] [ 84  60  54 109 156 140  39 116 123  53 103 101 158   3 100  27 163 174
+  37  69 131 197 191  23 199  17  32  31  77  20]
+Number of timeseries training data points is:  197
+Number of steady state training data points is:  171
+Number of timeseries test data points is:  3
+Number of steady state test data points is:  30
+Elapsed 35.4097049236
+Average Loss = 173.91: 100%|██████████| 300000/300000 [01:53<00:00, 2634.40it/s]
+Finished [100%]: Average Loss = 173.93
+100%|██████████| 10000/10000 [00:07<00:00, 1325.71it/s]
+Accuracy: 0.0
+Backend MacOSX is interactive backend. Turning interactive mode on.
+G1, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G4' 'G28'], MSE: 0.0289569319386, Data Var: 0.00241125334881
+Average Loss = 166.39: 100%|██████████| 300000/300000 [01:52<00:00, 2670.46it/s]
+Finished [100%]: Average Loss = 166.38
+100%|██████████| 10000/10000 [00:07<00:00, 1336.23it/s]
+Accuracy: 23.3333333333
+G10, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0048030374856, Data Var: 0.00442745332711
+Average Loss = 176.6: 100%|██████████| 300000/300000 [01:53<00:00, 2640.01it/s] 
+Finished [100%]: Average Loss = 176.53
+100%|██████████| 10000/10000 [00:07<00:00, 1328.73it/s]
+Accuracy: 0.0
+G15, Most Important Index: G58, Top 3 Important Indices: ['G58' 'G2' 'G97'], MSE: 0.0476769554956, Data Var: 6.5667450699e-05
+Average Loss = 175.03: 100%|██████████| 300000/300000 [01:53<00:00, 2644.52it/s]
+Finished [100%]: Average Loss = 174.97
+100%|██████████| 10000/10000 [00:07<00:00, 1333.21it/s]
+Accuracy: 0.0
+G23, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G57' 'G28'], MSE: 0.032420297756, Data Var: 0.00991485532098
+Average Loss = 173.83: 100%|██████████| 300000/300000 [01:53<00:00, 2652.87it/s]
+Finished [100%]: Average Loss = 173.9
+100%|██████████| 10000/10000 [00:07<00:00, 1256.42it/s]
+Accuracy: 0.0
+G25, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G66' 'G2'], MSE: 0.0278526758378, Data Var: 0.0025026593896
+Average Loss = 167.92: 100%|██████████| 300000/300000 [01:59<00:00, 2520.80it/s]
+Finished [100%]: Average Loss = 167.93
+100%|██████████| 10000/10000 [00:07<00:00, 1275.86it/s]
+Accuracy: 0.0
+G37, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0292515561756, Data Var: 0.0152180753901
+Average Loss = 175.37: 100%|██████████| 300000/300000 [02:11<00:00, 2286.47it/s]
+Finished [100%]: Average Loss = 175.44
+ 81%|████████  | 8123/10000 [00:06<00:02, 926.97it/s]Accuracy: 0.0
+G38, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G57' 'G2'], MSE: 0.0316078160797, Data Var: 0.000389131863814
+100%|██████████| 10000/10000 [00:08<00:00, 1192.52it/s]
+Average Loss = 166.25: 100%|██████████| 300000/300000 [02:19<00:00, 2152.16it/s]
+Finished [100%]: Average Loss = 166.24
+ 84%|████████▍ | 8399/10000 [00:06<00:01, 1276.35it/s]Accuracy: 13.3333333333
+100%|██████████| 10000/10000 [00:08<00:00, 1230.21it/s]
+G44, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G10' 'G55'], MSE: 0.00275712430737, Data Var: 0.00266035448466
+Average Loss = 167.72: 100%|██████████| 300000/300000 [02:05<00:00, 2383.12it/s]
+Finished [100%]: Average Loss = 167.78
+100%|██████████| 10000/10000 [00:07<00:00, 1265.12it/s]
+Average Loss = 224.14:   1%|▏         | 4183/300000 [00:01<01:53, 2603.26it/s]Accuracy: 0.0
+G45, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0180609622191, Data Var: 0.00335851199447
+Average Loss = 172.26: 100%|██████████| 300000/300000 [02:10<00:00, 2290.10it/s]
+Finished [100%]: Average Loss = 172.21
+100%|██████████| 10000/10000 [00:07<00:00, 1261.25it/s]
+Accuracy: 0.0
+G54, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0726408067743, Data Var: 0.00457138094822
+Average Loss = 166.17: 100%|██████████| 300000/300000 [02:05<00:00, 2395.52it/s]
+Finished [100%]: Average Loss = 166.18
+100%|██████████| 10000/10000 [00:07<00:00, 1277.45it/s]
+Average Loss = 431.62:   0%|          | 509/300000 [00:00<01:58, 2518.38it/s]Accuracy: 10.0
+G55, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G10' 'G44'], MSE: 0.00416054007158, Data Var: 0.00378419226748
+Average Loss = 171.4: 100%|██████████| 300000/300000 [02:07<00:00, 2357.91it/s] 
+Finished [100%]: Average Loss = 171.39
+100%|██████████| 10000/10000 [00:07<00:00, 1264.20it/s]
+Accuracy: 0.0
+G57, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0655030992151, Data Var: 0.00204266946525
+Average Loss = 170.57: 100%|██████████| 300000/300000 [02:02<00:00, 2451.87it/s]
+Finished [100%]: Average Loss = 170.56
+100%|██████████| 10000/10000 [00:07<00:00, 1283.09it/s]
+Accuracy: 0.0
+G62, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0474199901878, Data Var: 0.00501724570433
+Average Loss = 167.48: 100%|██████████| 300000/300000 [02:03<00:00, 2420.50it/s]
+Finished [100%]: Average Loss = 167.45
+100%|██████████| 10000/10000 [00:07<00:00, 1270.10it/s]
+Accuracy: 3.33333333333
+G63, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0195578268014, Data Var: 0.00963690872305
+Average Loss = 166.68: 100%|██████████| 300000/300000 [02:00<00:00, 2484.38it/s]
+Finished [100%]: Average Loss = 166.62
+100%|██████████| 10000/10000 [00:08<00:00, 1249.93it/s]
+Accuracy: 20.0
+G64, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.00462621541639, Data Var: 0.00309981206082
+Average Loss = 166.57: 100%|██████████| 300000/300000 [02:05<00:00, 2387.03it/s]
+Finished [100%]: Average Loss = 166.59
+100%|██████████| 10000/10000 [00:07<00:00, 1259.65it/s]
+Average Loss = 168.72:   5%|▌         | 15259/300000 [00:05<01:50, 2584.12it/s]Accuracy: 13.3333333333
+G65, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.00452816770506, Data Var: 0.00471206184768
+Average Loss = 168.73: 100%|██████████| 300000/300000 [02:03<00:00, 2420.37it/s]
+Finished [100%]: Average Loss = 168.73
+100%|██████████| 10000/10000 [00:07<00:00, 1265.05it/s]
+Accuracy: 0.0
+G66, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0338528318749, Data Var: 0.00378174121344
+Average Loss = 167.88: 100%|██████████| 300000/300000 [02:04<00:00, 2414.69it/s]
+Finished [100%]: Average Loss = 167.92
+100%|██████████| 10000/10000 [00:07<00:00, 1270.67it/s]
+Average Loss = 172.3:   3%|▎         | 8629/300000 [00:03<01:58, 2459.85it/s] Accuracy: 0.0
+G67, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0315258532768, Data Var: 0.00690156262028
+Average Loss = 166.42: 100%|██████████| 300000/300000 [02:07<00:00, 2347.04it/s]
+Finished [100%]: Average Loss = 166.43
+100%|██████████| 10000/10000 [00:07<00:00, 1270.54it/s]
+Accuracy: 23.3333333333
+G69, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0191088432888, Data Var: 0.013613916388
+Average Loss = 176.42: 100%|██████████| 300000/300000 [02:04<00:00, 2414.71it/s]
+Finished [100%]: Average Loss = 176.52
+100%|██████████| 10000/10000 [00:07<00:00, 1264.33it/s]
+Accuracy: 0.0
+G72, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0462480918587, Data Var: 0.0136887064621
+Average Loss = 176.53: 100%|██████████| 300000/300000 [02:10<00:00, 2294.69it/s]
+Finished [100%]: Average Loss = 176.41
+ 92%|█████████▏| 9165/10000 [00:07<00:00, 1256.12it/s]Accuracy: 0.0
+100%|██████████| 10000/10000 [00:08<00:00, 1226.33it/s]
+G73, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0378648298617, Data Var: 0.0111280152065
+Average Loss = 167.71: 100%|██████████| 300000/300000 [02:04<00:00, 2407.11it/s]
+Finished [100%]: Average Loss = 167.73
+100%|██████████| 10000/10000 [00:07<00:00, 1286.94it/s]
+Accuracy: 3.33333333333
+G75, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0200775528425, Data Var: 0.00649454229799
+Average Loss = 175.72: 100%|██████████| 300000/300000 [02:08<00:00, 2331.11it/s]
+Finished [100%]: Average Loss = 175.64
+100%|██████████| 10000/10000 [00:07<00:00, 1272.28it/s]
+Accuracy: 0.0
+G82, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G57' 'G2'], MSE: 0.0281760833758, Data Var: 0.00788241677225
+Average Loss = 166.62: 100%|██████████| 300000/300000 [02:04<00:00, 2405.86it/s]
+Finished [100%]: Average Loss = 166.59
+100%|██████████| 10000/10000 [00:07<00:00, 1284.84it/s]
+Accuracy: 6.66666666667
+G85, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.00781778648265, Data Var: 0.00425657411357
+Average Loss = 174.63: 100%|██████████| 300000/300000 [02:05<00:00, 2398.69it/s]
+Finished [100%]: Average Loss = 174.65
+ 31%|███▏      | 3130/10000 [00:02<00:05, 1239.75it/s]Accuracy: 0.0
+G87, Most Important Index: G4, Top 3 Important Indices: ['G4' 'G66' 'G28'], MSE: 0.0329212222297, Data Var: 0.000460341544902
+100%|██████████| 10000/10000 [00:07<00:00, 1269.31it/s]
+Average Loss = 166.48: 100%|██████████| 300000/300000 [02:07<00:00, 2351.74it/s]
+Finished [100%]: Average Loss = 166.47
+100%|██████████| 10000/10000 [00:07<00:00, 1265.62it/s]
+Average Loss = 200.09:   2%|▏         | 5800/300000 [00:02<01:50, 2661.34it/s]Accuracy: 3.33333333333
+G92, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.00900371537866, Data Var: 0.00456133883919
+Average Loss = 166.49: 100%|██████████| 300000/300000 [02:04<00:00, 2403.57it/s]
+Finished [100%]: Average Loss = 166.49
+100%|██████████| 10000/10000 [00:07<00:00, 1271.17it/s]
+Average Loss = 167.78:   9%|▉         | 27464/300000 [00:10<01:50, 2472.97it/s]Accuracy: 6.66666666667
+G99, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.00842935788917, Data Var: 0.00647095102618
+Average Loss = 167.37: 100%|██████████| 300000/300000 [02:04<00:00, 2409.85it/s]
+Finished [100%]: Average Loss = 167.37
+100%|██████████| 10000/10000 [00:07<00:00, 1259.36it/s]
+Average Loss = 167.75:   8%|▊         | 24046/300000 [00:09<01:50, 2494.01it/s]Accuracy: 0.0
+G5, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0200187329281, Data Var: 0.00308236111461
+Average Loss = 167.49: 100%|██████████| 300000/300000 [02:05<00:00, 2386.32it/s]
+Finished [100%]: Average Loss = 167.5
+100%|██████████| 10000/10000 [00:07<00:00, 1267.03it/s]
+Accuracy: 0.0
+G26, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.023452249185, Data Var: 0.00414823050658
+Average Loss = 167.92: 100%|██████████| 300000/300000 [02:07<00:00, 2357.17it/s]
+Finished [100%]: Average Loss = 167.91
+100%|██████████| 10000/10000 [00:07<00:00, 1272.90it/s]
+Accuracy: 0.0
+G36, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0240556881533, Data Var: 0.00431006611474
+Average Loss = 167.64: 100%|██████████| 300000/300000 [02:05<00:00, 2396.63it/s]
+Finished [100%]: Average Loss = 167.65
+100%|██████████| 10000/10000 [00:07<00:00, 1274.09it/s]
+Average Loss = 167.58:   6%|▌         | 18380/300000 [00:07<01:49, 2580.50it/s]Accuracy: 0.0
+G40, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.026945633132, Data Var: 0.00953199041499
+Average Loss = 167.81: 100%|██████████| 300000/300000 [02:04<00:00, 2403.31it/s]
+Finished [100%]: Average Loss = 167.83
+100%|██████████| 10000/10000 [00:07<00:00, 1278.66it/s]
+Average Loss = 167.53:   5%|▍         | 14291/300000 [00:05<01:50, 2585.66it/s]Accuracy: 0.0
+G42, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0187932458737, Data Var: 0.00270346628748
+Average Loss = 167.66: 100%|██████████| 300000/300000 [02:04<00:00, 2416.01it/s]
+Finished [100%]: Average Loss = 167.64
+100%|██████████| 10000/10000 [00:07<00:00, 1270.96it/s]
+Accuracy: 0.0
+G43, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0281304967306, Data Var: 0.00651510165181
+Average Loss = 167.51: 100%|██████████| 300000/300000 [02:07<00:00, 2359.97it/s]
+Finished [100%]: Average Loss = 167.47
+100%|██████████| 10000/10000 [00:07<00:00, 1275.80it/s]
+Accuracy: 0.0
+G46, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0271130433861, Data Var: 0.00464447711979
+Average Loss = 167.62: 100%|██████████| 300000/300000 [02:06<00:00, 2371.92it/s]
+Finished [100%]: Average Loss = 167.6
+100%|██████████| 10000/10000 [00:07<00:00, 1287.37it/s]
+Average Loss = 442.61:   0%|          | 533/300000 [00:00<01:53, 2649.53it/s]Accuracy: 0.0
+G83, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0244787443703, Data Var: 0.00402158866723
+Average Loss = 167.84: 100%|██████████| 300000/300000 [02:01<00:00, 2475.07it/s]
+Finished [100%]: Average Loss = 167.87
+100%|██████████| 10000/10000 [00:07<00:00, 1264.05it/s]
+Average Loss = 167.67:  11%|█         | 33128/300000 [00:12<01:45, 2540.92it/s]Accuracy: 0.0
+G90, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0258968678632, Data Var: 0.00224607143298
+Average Loss = 167.83: 100%|██████████| 300000/300000 [02:00<00:00, 2498.05it/s]
+Finished [100%]: Average Loss = 167.84
+100%|██████████| 10000/10000 [00:07<00:00, 1270.97it/s]
+Accuracy: 0.0
+G91, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0210428434394, Data Var: 0.0077162154985
+Average Loss = 167.8: 100%|██████████| 300000/300000 [01:48<00:00, 2769.44it/s] 
+Finished [100%]: Average Loss = 167.78
+100%|██████████| 10000/10000 [00:07<00:00, 1340.50it/s]
+Accuracy: 0.0
+G93, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0229994057255, Data Var: 0.00420414142082
+Average Loss = 167.66: 100%|██████████| 300000/300000 [01:44<00:00, 2884.51it/s]
+Finished [100%]: Average Loss = 167.68
+100%|██████████| 10000/10000 [00:07<00:00, 1341.42it/s]
+Accuracy: 10.0
+G96, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0206181741742, Data Var: 0.00445473851476
+Average Loss = 168.11: 100%|██████████| 300000/300000 [01:57<00:00, 2562.89it/s]
+Finished [100%]: Average Loss = 168.12
+100%|██████████| 10000/10000 [00:07<00:00, 1267.87it/s]
+Accuracy: 0.0
+G98, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.022605229618, Data Var: 0.00406978431868
+Average Loss = 167.54: 100%|██████████| 300000/300000 [02:07<00:00, 2354.09it/s]
+Finished [100%]: Average Loss = 167.58
+100%|██████████| 10000/10000 [00:07<00:00, 1272.98it/s]
+Accuracy: 3.33333333333
+G100, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.030111936416, Data Var: 0.0179490546159
+Average Loss = 171.39: 100%|██████████| 300000/300000 [02:06<00:00, 2374.45it/s]
+Finished [100%]: Average Loss = 171.41
+100%|██████████| 10000/10000 [00:07<00:00, 1263.63it/s]
+Average Loss = 166.03:  10%|▉         | 29839/300000 [00:11<01:54, 2353.94it/s]Accuracy: 0.0
+G2, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.065348353201, Data Var: 0.00114312167631
+Average Loss = 166.24: 100%|██████████| 300000/300000 [02:06<00:00, 2380.95it/s]
+Finished [100%]: Average Loss = 166.24
+100%|██████████| 10000/10000 [00:07<00:00, 1267.32it/s]
+Average Loss = 168.25:   8%|▊         | 22873/300000 [00:08<01:50, 2517.78it/s]Accuracy: 10.0
+G3, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0129754742795, Data Var: 0.0132005566156
+Average Loss = 167.82: 100%|██████████| 300000/300000 [02:05<00:00, 2398.27it/s]
+Finished [100%]: Average Loss = 167.84
+100%|██████████| 10000/10000 [00:07<00:00, 1259.73it/s]
+Accuracy: 0.0
+G4, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0244467585074, Data Var: 0.00257109131913
+Average Loss = 177.02: 100%|██████████| 300000/300000 [02:05<00:00, 2393.62it/s]
+Finished [100%]: Average Loss = 176.9
+100%|██████████| 10000/10000 [00:07<00:00, 1256.18it/s]
+Accuracy: 0.0
+G6, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0379878500454, Data Var: 0.000169897376779
+Average Loss = 167.86: 100%|██████████| 300000/300000 [02:10<00:00, 2302.91it/s]
+Finished [100%]: Average Loss = 167.87
+100%|██████████| 10000/10000 [00:07<00:00, 1271.04it/s]
+Accuracy: 0.0
+G7, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0264720742049, Data Var: 0.00481029364619
+Average Loss = 166.7: 100%|██████████| 300000/300000 [02:07<00:00, 2350.40it/s] 
+Finished [100%]: Average Loss = 166.7
+100%|██████████| 10000/10000 [00:07<00:00, 1276.81it/s]
+Accuracy: 3.33333333333
+G8, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.00983589543306, Data Var: 0.00295631223519
+Average Loss = 176.06: 100%|██████████| 300000/300000 [02:06<00:00, 2376.28it/s]
+Finished [100%]: Average Loss = 176.1
+100%|██████████| 10000/10000 [00:07<00:00, 1377.34it/s]
+Average Loss = 381.49:   1%|          | 1727/300000 [00:00<01:44, 2861.94it/s]Accuracy: 0.0
+G9, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0424764010317, Data Var: 4.60498894523e-05
+Average Loss = 176.67: 100%|██████████| 300000/300000 [01:48<00:00, 2759.64it/s]
+Finished [100%]: Average Loss = 176.66
+100%|██████████| 10000/10000 [00:07<00:00, 1350.47it/s]
+Accuracy: 0.0
+G11, Most Important Index: G33, Top 3 Important Indices: ['G33' 'G86' 'G97'], MSE: 0.0388457662301, Data Var: 0.000102178388986
+Average Loss = 167.88: 100%|██████████| 300000/300000 [01:47<00:00, 2781.15it/s]
+Finished [100%]: Average Loss = 167.89
+100%|██████████| 10000/10000 [00:07<00:00, 1347.21it/s]
+Average Loss = 190.78:   2%|▏         | 6907/300000 [00:02<01:41, 2882.83it/s]Accuracy: 3.33333333333
+G12, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0184146777438, Data Var: 0.00284416930471
+Average Loss = 176.27: 100%|██████████| 300000/300000 [01:47<00:00, 2787.32it/s]
+Finished [100%]: Average Loss = 176.24
+100%|██████████| 10000/10000 [00:07<00:00, 1346.05it/s]
+Average Loss = 176.12:   9%|▉         | 26406/300000 [00:09<01:34, 2889.38it/s]Accuracy: 0.0
+G13, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0348907137901, Data Var: 0.000235149381701
+Average Loss = 176.96: 100%|██████████| 300000/300000 [01:46<00:00, 2813.44it/s]
+Finished [100%]: Average Loss = 176.96
+100%|██████████| 10000/10000 [00:07<00:00, 1349.70it/s]
+Average Loss = 175.18:   4%|▍         | 12696/300000 [00:04<01:41, 2828.00it/s]Accuracy: 0.0
+G14, Most Important Index: G33, Top 3 Important Indices: ['G33' 'G58' 'G97'], MSE: 0.0380976835179, Data Var: 0.000191183559841
+Average Loss = 174.65: 100%|██████████| 300000/300000 [02:40<00:00, 1869.42it/s]
+Finished [100%]: Average Loss = 174.7
+100%|██████████| 10000/10000 [00:07<00:00, 1348.27it/s]
+Accuracy: 0.0
+G16, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G57' 'G2'], MSE: 0.0328841887986, Data Var: 0.000949834879588
+Average Loss = 167.54: 100%|██████████| 300000/300000 [01:51<00:00, 2693.40it/s]
+Finished [100%]: Average Loss = 167.51
+100%|██████████| 10000/10000 [00:07<00:00, 1351.10it/s]
+Average Loss = 427.06:   0%|          | 1142/300000 [00:00<01:45, 2839.85it/s]Accuracy: 0.0
+G17, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0308361020443, Data Var: 0.00664188874149
+Average Loss = 166.23: 100%|██████████| 300000/300000 [01:48<00:00, 2765.01it/s]
+Finished [100%]: Average Loss = 166.25
+100%|██████████| 10000/10000 [00:07<00:00, 1345.71it/s]
+Accuracy: 26.6666666667
+G18, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G64'], MSE: 0.00297343737671, Data Var: 0.00269820913403
+Average Loss = 176.07: 100%|██████████| 300000/300000 [01:46<00:00, 2806.90it/s]
+Finished [100%]: Average Loss = 176.12
+ 98%|█████████▊| 9823/10000 [00:07<00:00, 1348.94it/s]Accuracy: 0.0
+G19, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0352271817677, Data Var: 0.000373638215065
+100%|██████████| 10000/10000 [00:07<00:00, 1343.82it/s]
+Average Loss = 176.95: 100%|██████████| 300000/300000 [01:47<00:00, 2800.14it/s]
+Finished [100%]: Average Loss = 177.04
+100%|██████████| 10000/10000 [00:07<00:00, 1344.02it/s]
+Average Loss = 176.83:  10%|█         | 30635/300000 [00:10<01:32, 2904.56it/s]Accuracy: 0.0
+G20, Most Important Index: G86, Top 3 Important Indices: ['G86' 'G33' 'G22'], MSE: 0.0401780484101, Data Var: 3.01075112594e-05
+Average Loss = 176.42: 100%|██████████| 300000/300000 [03:39<00:00, 1365.48it/s]
+Finished [100%]: Average Loss = 176.46
+100%|██████████| 10000/10000 [00:07<00:00, 1277.71it/s]
+Accuracy: 0.0
+G21, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0350696120148, Data Var: 0.000180469045723
+Average Loss = 173.57: 100%|██████████| 300000/300000 [02:00<00:00, 2480.04it/s]
+Finished [100%]: Average Loss = 173.59
+ 60%|█████▉    | 5980/10000 [00:04<00:02, 1360.05it/s]Accuracy: 0.0
+100%|██████████| 10000/10000 [00:07<00:00, 1324.04it/s]
+G22, Most Important Index: G4, Top 3 Important Indices: ['G4' 'G66' 'G28'], MSE: 0.0298487860643, Data Var: 0.00116258910736
+Average Loss = 174.33: 100%|██████████| 300000/300000 [01:50<00:00, 2720.24it/s]
+Finished [100%]: Average Loss = 174.28
+100%|██████████| 10000/10000 [00:07<00:00, 1328.14it/s]
+Accuracy: 0.0
+G24, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G66' 'G2'], MSE: 0.0343364109992, Data Var: 0.0104970645808
+Average Loss = 166.47: 100%|██████████| 300000/300000 [01:48<00:00, 2776.05it/s]
+Finished [100%]: Average Loss = 166.47
+100%|██████████| 10000/10000 [1:01:58<00:00,  2.69it/s] 
+Accuracy: 0.0
+G27, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.013032489956, Data Var: 0.00916467210125
+Average Loss = 168.51: 100%|██████████| 300000/300000 [1:27:42<00:00, 57.01it/s]  
+Finished [100%]: Average Loss = 168.49
+100%|██████████| 10000/10000 [00:08<00:00, 1232.58it/s]
+Average Loss = 348.34:   1%|          | 1811/300000 [00:00<01:55, 2592.84it/s]Accuracy: 0.0
+G28, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0358888571145, Data Var: 0.00387724626664
+Average Loss = 173.8: 100%|██████████| 300000/300000 [02:02<00:00, 2451.16it/s] 
+Finished [100%]: Average Loss = 173.78
+100%|██████████| 10000/10000 [00:07<00:00, 1258.79it/s]
+Accuracy: 0.0
+G29, Most Important Index: G4, Top 3 Important Indices: ['G4' 'G66' 'G12'], MSE: 0.0324520089509, Data Var: 0.00552832664481
+Average Loss = 166.23: 100%|██████████| 300000/300000 [02:01<00:00, 2467.38it/s]
+Finished [100%]: Average Loss = 166.25
+Accuracy: 16.6666666667
+G30, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.00439073670657, Data Var: 0.00264966257605
+100%|██████████| 10000/10000 [00:07<00:00, 1282.27it/s]
+Average Loss = 173.47: 100%|██████████| 300000/300000 [02:01<00:00, 2475.93it/s]
+Finished [100%]: Average Loss = 173.44
+100%|██████████| 10000/10000 [00:07<00:00, 1287.33it/s]
+Average Loss = 317.19:   1%|          | 2935/300000 [00:01<01:51, 2664.93it/s]Accuracy: 0.0
+G31, Most Important Index: G94, Top 3 Important Indices: ['G94' 'G4' 'G12'], MSE: 0.0392206715039, Data Var: 0.00413164101454
+Average Loss = 175.86: 100%|██████████| 300000/300000 [02:04<00:00, 2407.47it/s]
+Finished [100%]: Average Loss = 175.87
+100%|██████████| 10000/10000 [00:07<00:00, 1272.99it/s]
+Accuracy: 0.0
+G32, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0411760932278, Data Var: 0.000103880334189
+Average Loss = 173.12: 100%|██████████| 300000/300000 [02:05<00:00, 2397.43it/s]
+Finished [100%]: Average Loss = 173.06
+ 26%|██▌       | 2583/10000 [00:02<00:06, 1135.56it/s]Accuracy: 0.0
+G33, Most Important Index: G94, Top 3 Important Indices: ['G94' 'G92' 'G8'], MSE: 0.0427527316544, Data Var: 0.00180865374744
+100%|██████████| 10000/10000 [00:07<00:00, 1265.58it/s]
+Average Loss = 175.38: 100%|██████████| 300000/300000 [02:06<00:00, 2368.59it/s]
+Finished [100%]: Average Loss = 175.37
+Accuracy: 0.0
+G34, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G57' 'G2'], MSE: 0.0249756773221, Data Var: 0.00127860679699
+100%|██████████| 10000/10000 [00:07<00:00, 1265.66it/s]
+Average Loss = 167.58: 100%|██████████| 300000/300000 [02:02<00:00, 2450.92it/s]
+Finished [100%]: Average Loss = 167.64
+Accuracy: 3.33333333333
+G35, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0152440831327, Data Var: 0.00416106292812
+100%|██████████| 10000/10000 [00:07<00:00, 1267.92it/s]
+Average Loss = 176.27: 100%|██████████| 300000/300000 [02:03<00:00, 2435.87it/s]
+Finished [100%]: Average Loss = 176.24
+100%|██████████| 10000/10000 [00:07<00:00, 1270.33it/s]
+Average Loss = 270.59:   1%|          | 3401/300000 [00:01<01:52, 2630.60it/s]Accuracy: 0.0
+G39, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.038373413644, Data Var: 0.000236484926471
+Average Loss = 176.21: 100%|██████████| 300000/300000 [02:12<00:00, 2270.71it/s]
+Finished [100%]: Average Loss = 176.19
+100%|██████████| 10000/10000 [00:07<00:00, 1267.50it/s]
+Accuracy: 0.0
+G41, Most Important Index: G58, Top 3 Important Indices: ['G58' 'G33' 'G97'], MSE: 0.030366530344, Data Var: 0.00041201570117
+Average Loss = 167.19: 100%|██████████| 300000/300000 [02:11<00:00, 2273.64it/s]
+Finished [100%]: Average Loss = 167.17
+100%|██████████| 10000/10000 [00:07<00:00, 1289.12it/s]
+Accuracy: 6.66666666667
+G47, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.017067377796, Data Var: 0.00726370917698
+Average Loss = 166.7: 100%|██████████| 300000/300000 [02:10<00:00, 2297.35it/s] 
+Finished [100%]: Average Loss = 166.69
+100%|██████████| 10000/10000 [00:07<00:00, 1282.42it/s]
+Average Loss = 425.25:   0%|          | 1063/300000 [00:00<01:53, 2642.22it/s]Accuracy: 10.0
+G48, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.00703037364859, Data Var: 0.00456200753324
+Average Loss = 166.72: 100%|██████████| 300000/300000 [02:08<00:00, 2330.84it/s]
+Finished [100%]: Average Loss = 166.74
+100%|██████████| 10000/10000 [00:07<00:00, 1263.16it/s]
+Average Loss = 220.35:   2%|▏         | 4980/300000 [00:01<01:57, 2504.47it/s]Accuracy: 6.66666666667
+G49, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0142208372425, Data Var: 0.00711395553432
+Average Loss = 173.82: 100%|██████████| 300000/300000 [02:07<00:00, 2356.04it/s]
+Finished [100%]: Average Loss = 173.87
+100%|██████████| 10000/10000 [00:07<00:00, 1283.00it/s]
+Accuracy: 0.0
+G50, Most Important Index: G4, Top 3 Important Indices: ['G4' 'G66' 'G28'], MSE: 0.0305481544422, Data Var: 0.00121665165658
+Average Loss = 167.38: 100%|██████████| 300000/300000 [02:09<00:00, 2323.66it/s]
+Finished [100%]: Average Loss = 167.38
+100%|██████████| 10000/10000 [00:07<00:00, 1285.52it/s]
+Accuracy: 0.0
+G51, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0144575408185, Data Var: 0.00306305686642
+Average Loss = 167.77: 100%|██████████| 300000/300000 [02:10<00:00, 2294.49it/s]
+Finished [100%]: Average Loss = 167.78
+100%|██████████| 10000/10000 [00:07<00:00, 1276.60it/s]
+Accuracy: 0.0
+G52, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G30' 'G18'], MSE: 0.0245740174213, Data Var: 0.00395636974602
+Average Loss = 167.32: 100%|██████████| 300000/300000 [02:12<00:00, 2259.11it/s]
+Finished [100%]: Average Loss = 167.31
+100%|██████████| 10000/10000 [00:07<00:00, 1283.03it/s]
+Accuracy: 6.66666666667
+G53, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G30' 'G18'], MSE: 0.0174306779848, Data Var: 0.00795392180879
+Average Loss = 169.13: 100%|██████████| 300000/300000 [02:12<00:00, 2268.75it/s]
+Finished [100%]: Average Loss = 169.15
+100%|██████████| 10000/10000 [00:07<00:00, 1272.38it/s]
+Accuracy: 0.0
+G56, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0330558652404, Data Var: 0.00589945752531
+Average Loss = 172.46: 100%|██████████| 300000/300000 [02:13<00:00, 2250.94it/s]
+Finished [100%]: Average Loss = 172.43
+100%|██████████| 10000/10000 [00:07<00:00, 1267.05it/s]
+Accuracy: 0.0
+G58, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0739287217814, Data Var: 0.00161737147437
+Average Loss = 175.24: 100%|██████████| 300000/300000 [02:18<00:00, 2171.80it/s]
+Finished [100%]: Average Loss = 175.2
+100%|██████████| 10000/10000 [00:07<00:00, 1268.88it/s]
+Accuracy: 0.0
+G59, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G57' 'G97'], MSE: 0.029154040831, Data Var: 0.00152782986223
+Average Loss = 171.75: 100%|██████████| 300000/300000 [02:21<00:00, 2125.45it/s]
+Finished [100%]: Average Loss = 171.8
+100%|██████████| 10000/10000 [00:07<00:00, 1275.16it/s]
+Accuracy: 0.0
+G60, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G30' 'G18'], MSE: 0.0630359277417, Data Var: 0.00705968023683
+Average Loss = 176.81: 100%|██████████| 300000/300000 [02:16<00:00, 2200.32it/s]
+Finished [100%]: Average Loss = 176.87
+100%|██████████| 10000/10000 [00:07<00:00, 1273.30it/s]
+Accuracy: 0.0
+G61, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0453758784027, Data Var: 0.000360768898041
+Average Loss = 166.67: 100%|██████████| 300000/300000 [02:16<00:00, 2203.01it/s]
+Finished [100%]: Average Loss = 166.66
+100%|██████████| 10000/10000 [00:08<00:00, 1209.88it/s]
+Accuracy: 0.0
+G68, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0128361040489, Data Var: 0.00563136771343
+Average Loss = 177.01: 100%|██████████| 300000/300000 [02:16<00:00, 2197.78it/s]
+Finished [100%]: Average Loss = 176.92
+100%|██████████| 10000/10000 [00:07<00:00, 1267.64it/s]
+Average Loss = 470.9:   0%|          | 528/300000 [00:00<01:54, 2612.91it/s] Accuracy: 0.0
+G70, Most Important Index: G86, Top 3 Important Indices: ['G86' 'G33' 'G2'], MSE: 0.0377411230343, Data Var: 0.0112783051127
+Average Loss = 174.19: 100%|██████████| 300000/300000 [02:58<00:00, 1684.31it/s]
+Finished [100%]: Average Loss = 174.24
+100%|██████████| 10000/10000 [00:13<00:00, 763.18it/s]
+Average Loss = 180.42:   3%|▎         | 8732/300000 [00:05<04:03, 1196.51it/s]Accuracy: 0.0
+G71, Most Important Index: G4, Top 3 Important Indices: ['G4' 'G66' 'G12'], MSE: 0.0270431694089, Data Var: 0.00531182753715
+Average Loss = 176.35: 100%|██████████| 300000/300000 [04:09<00:00, 1201.24it/s]
+Finished [100%]: Average Loss = 176.26
+100%|██████████| 10000/10000 [00:17<00:00, 587.52it/s]
+Accuracy: 0.0
+G74, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.0371750247253, Data Var: 0.0115592393073
+Average Loss = 168.06: 100%|██████████| 300000/300000 [7:56:42<00:00, 10.49it/s]  
+Finished [100%]: Average Loss = 168.03
+100%|██████████| 10000/10000 [00:16<00:00, 624.34it/s]
+Accuracy: 0.0
+G76, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0288193195242, Data Var: 0.0141825644753
+Average Loss = 176.72: 100%|██████████| 300000/300000 [02:16<00:00, 2198.51it/s]
+Finished [100%]: Average Loss = 176.76
+100%|██████████| 10000/10000 [00:07<00:00, 1337.16it/s]
+Accuracy: 0.0
+G77, Most Important Index: G58, Top 3 Important Indices: ['G58' 'G33' 'G97'], MSE: 0.0386380646112, Data Var: 0.00711068263541
+Average Loss = 175.58: 100%|██████████| 300000/300000 [01:51<00:00, 2694.92it/s]
+Finished [100%]: Average Loss = 175.6
+100%|██████████| 10000/10000 [00:07<00:00, 1327.02it/s]
+Accuracy: 0.0
+G78, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G57' 'G2'], MSE: 0.0337051302558, Data Var: 0.00182378194636
+Average Loss = 173.8: 100%|██████████| 300000/300000 [01:47<00:00, 2782.16it/s] 
+Finished [100%]: Average Loss = 173.95
+100%|██████████| 10000/10000 [00:07<00:00, 1334.01it/s]
+Accuracy: 0.0
+G79, Most Important Index: G4, Top 3 Important Indices: ['G4' 'G66' 'G12'], MSE: 0.0333679536426, Data Var: 0.00398217666631
+Average Loss = 176.47: 100%|██████████| 300000/300000 [01:50<00:00, 2719.78it/s]
+Finished [100%]: Average Loss = 176.39
+100%|██████████| 10000/10000 [00:07<00:00, 1332.88it/s]
+Accuracy: 0.0
+G80, Most Important Index: G33, Top 3 Important Indices: ['G33' 'G58' 'G97'], MSE: 0.0350201353419, Data Var: 0.00025403246829
+Average Loss = 167.21: 100%|██████████| 300000/300000 [22:16<00:00, 224.53it/s] 
+Finished [100%]: Average Loss = 167.21
+100%|██████████| 10000/10000 [00:07<00:00, 1331.74it/s]
+Accuracy: 0.0
+G81, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0217361706241, Data Var: 0.00754617859078
+Average Loss = 173.49: 100%|██████████| 300000/300000 [01:46<00:00, 2805.12it/s]
+Finished [100%]: Average Loss = 173.56
+100%|██████████| 10000/10000 [00:07<00:00, 1319.81it/s]
+Accuracy: 0.0
+G84, Most Important Index: G4, Top 3 Important Indices: ['G4' 'G66' 'G12'], MSE: 0.0300435859077, Data Var: 0.00229194161807
+Average Loss = 173.22: 100%|██████████| 300000/300000 [01:45<00:00, 2837.33it/s]
+Finished [100%]: Average Loss = 173.18
+100%|██████████| 10000/10000 [00:07<00:00, 1329.24it/s]
+Accuracy: 0.0
+G86, Most Important Index: G12, Top 3 Important Indices: ['G12' 'G8' 'G4'], MSE: 0.0360163214438, Data Var: 0.00158953307425
+Average Loss = 174.91: 100%|██████████| 300000/300000 [01:49<00:00, 2737.06it/s]
+Finished [100%]: Average Loss = 174.93
+100%|██████████| 10000/10000 [00:07<00:00, 1327.60it/s]
+Accuracy: 0.0
+G88, Most Important Index: G97, Top 3 Important Indices: ['G97' 'G57' 'G2'], MSE: 0.0335205659153, Data Var: 0.000751322002274
+Average Loss = 177.4: 100%|██████████| 300000/300000 [58:10<00:00, 85.95it/s]  
+Finished [100%]: Average Loss = 177.42
+100%|██████████| 10000/10000 [00:07<00:00, 1339.03it/s]
+Accuracy: 0.0
+G89, Most Important Index: G2, Top 3 Important Indices: ['G2' 'G58' 'G97'], MSE: 0.041495515904, Data Var: 0.00963764631375
+Average Loss = 167.26: 100%|██████████| 300000/300000 [01:55<00:00, 2595.28it/s]
+Finished [100%]: Average Loss = 167.23
+100%|██████████| 10000/10000 [00:07<00:00, 1311.97it/s]
+Accuracy: 0.0
+G94, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G55' 'G18'], MSE: 0.0091364893853, Data Var: 0.00217778972077
+Average Loss = 166.35: 100%|██████████| 300000/300000 [01:58<00:00, 2541.12it/s]
+Finished [100%]: Average Loss = 166.34
+100%|██████████| 10000/10000 [00:07<00:00, 1296.09it/s]
+Accuracy: 3.33333333333
+G95, Most Important Index: G44, Top 3 Important Indices: ['G44' 'G30' 'G18'], MSE: 0.00602480033056, Data Var: 0.00380519774461
+Average Loss = 171.18: 100%|██████████| 300000/300000 [01:55<00:00, 2604.54it/s]
+Finished [100%]: Average Loss = 171.18
+100%|██████████| 10000/10000 [00:07<00:00, 1308.88it/s]
+Accuracy: 0.0
+G97, Most Important Index: G18, Top 3 Important Indices: ['G18' 'G55' 'G44'], MSE: 0.0614507053215, Data Var: 0.00132057721389
+Avg Mean Sq Error: 0.0285578076462, Test Data Variance: 0.00458654629857
+Model parameters: <pymc3.model.Model object at 0x1cd16b3d0>
+Exception TypeError: TypeError("'NoneType' object is not callable",) in <function _remove at 0x1102ba7d0> ignored
+
+Process finished with exit code 0
